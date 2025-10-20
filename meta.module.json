@@ -9,11 +9,19 @@
   },
   {
     "module": "app.module.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Main application logic - handles dynamic module loading",
-    "dependencies": ["header.module.html", "links.module.html", "footer.module.html", "version.json"],
-    "lastUpdated": "2025-10-20T16:50"
+    "description": "Main application logic - data-driven module loading",
+    "dependencies": ["header.module.html", "footer.module.html", "version.json", "links.data.json"],
+    "lastUpdated": "2025-10-20T19:00"
+  },
+  {
+    "module": "links.data.json",
+    "version": "1.0.0",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Structured data for all links with categories and metadata",
+    "dependencies": [],
+    "lastUpdated": "2025-10-20T19:00"
   },
   {
     "module": "style.module.css",

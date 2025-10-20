@@ -1,0 +1,258 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-10-20",
+  "totalLinks": 21,
+  "categories": [
+    {
+      "id": "ai-tools",
+      "name": "🤖 AI Tools",
+      "description": "Artificial Intelligence platforms and tools",
+      "order": 1,
+      "links": [
+        {
+          "id": "laptop-comparator",
+          "title": "Laptop Specs Comparator",
+          "url": "https://aistudio.google.com/u/1/apps/drive/1zQP2xmvUS4xRhmjcaLKiNUF3Nt5zepap?showAssistant=true&showPreview=true",
+          "description": "AI-powered laptop comparison tool",
+          "tags": ["AI", "hardware", "comparison"],
+          "category": "ai-tools",
+          "priority": 1,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "higgsfield",
+          "title": "HIGGSFIELD AI",
+          "url": "https://higgsfield.ai/",
+          "description": "AI content generation platform",
+          "tags": ["AI", "creative", "content"],
+          "category": "ai-tools",
+          "priority": 2,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "openart-01",
+          "title": "OPENART AI - 01",
+          "url": "https://openart.ai/",
+          "description": "AI art generation tool",
+          "tags": ["AI", "art", "image-generation"],
+          "category": "ai-tools",
+          "priority": 3,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "openart-02",
+          "title": "OPENART AI - 02",
+          "url": "https://openart.ai/home?utm_source=bing&utm_medium=pmax&utm_campaign=569878185&utm_term=openart.ai&utm_content=Tung+Tung+Tung+Sahur",
+          "description": "AI art generation tool (alternative link)",
+          "tags": ["AI", "art", "image-generation"],
+          "category": "ai-tools",
+          "priority": 4,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "copilot",
+          "title": "Copilot",
+          "url": "https://copilot.microsoft.com/",
+          "description": "Microsoft's AI assistant",
+          "tags": ["AI", "assistant", "productivity"],
+          "category": "ai-tools",
+          "priority": 5,
+          "dateAdded": "2025-10-17"
+        },
+        {
+          "id": "claude",
+          "title": "Claude AI",
+          "url": "https://claude.ai/",
+          "description": "Anthropic's AI assistant",
+          "tags": ["AI", "assistant", "chatbot"],
+          "category": "ai-tools",
+          "priority": 6,
+          "dateAdded": "2025-10-17"
+        }
+      ]
+    },
+    {
+      "id": "dev-tools",
+      "name": "💻 Development Tools",
+      "description": "Web development and coding platforms",
+      "order": 2,
+      "links": [
+        {
+          "id": "w3-editor",
+          "title": "Html editor by W3",
+          "url": "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor",
+          "description": "Online HTML editor and testing environment",
+          "tags": ["HTML", "editor", "learning"],
+          "category": "dev-tools",
+          "priority": 1,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "jsfiddle",
+          "title": "JSFIDDLE",
+          "url": "https://jsfiddle.net/",
+          "description": "Online JavaScript playground",
+          "tags": ["JavaScript", "playground", "testing"],
+          "category": "dev-tools",
+          "priority": 2,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "codepen",
+          "title": "CODEPEN",
+          "url": "https://codepen.io/",
+          "description": "Social development environment for front-end",
+          "tags": ["HTML", "CSS", "JavaScript", "community"],
+          "category": "dev-tools",
+          "priority": 3,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "hcodx",
+          "title": "HCODX - FREE HTML Editor",
+          "url": "https://hcodx.com/",
+          "description": "Free online HTML editor",
+          "tags": ["HTML", "editor", "free"],
+          "category": "dev-tools",
+          "priority": 4,
+          "dateAdded": "2025-10-16"
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "🛒 Shopping",
+      "description": "Online shopping platforms",
+      "order": 3,
+      "links": [
+        {
+          "id": "mini-pc",
+          "title": "Mini pc N9N Intel N100 8Gb Ram 256Gb Nvme Win11",
+          "url": "https://www.skroutz.gr/skoop/cDqzELtyR5/mini-pc-n9n-intel-n100-8gb-ram-256gb-nvme-win11",
+          "description": "Mini PC with Intel N100 processor",
+          "tags": ["hardware", "mini-pc", "shopping"],
+          "category": "shopping",
+          "priority": 1,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "thomann-arc",
+          "title": "ARC ON·EAR - THOMANN - 295€",
+          "url": "https://www.thomann.de/gr/ik_multimedia_arc_onear.htm",
+          "description": "IK Multimedia ARC headphones",
+          "tags": ["audio", "headphones", "music"],
+          "category": "shopping",
+          "priority": 2,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "skroutz",
+          "title": "SKROUTZ.GR",
+          "url": "https://www.skroutz.gr/",
+          "description": "Greek price comparison website",
+          "tags": ["shopping", "greece", "comparison"],
+          "category": "shopping",
+          "priority": 3,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "public",
+          "title": "PUBLIC GR",
+          "url": "https://www.public.gr/",
+          "description": "Electronics retailer in Greece",
+          "tags": ["shopping", "greece", "electronics"],
+          "category": "shopping",
+          "priority": 4,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "aliexpress",
+          "title": "Ali Express",
+          "url": "https://www.aliexpress.com/",
+          "description": "International online shopping",
+          "tags": ["shopping", "international", "wholesale"],
+          "category": "shopping",
+          "priority": 5,
+          "dateAdded": "2025-10-16"
+        }
+      ]
+    },
+    {
+      "id": "personal",
+      "name": "👤 Personal",
+      "description": "Personal files and documentation",
+      "order": 4,
+      "links": [
+        {
+          "id": "github",
+          "title": "GitHub",
+          "url": "https://github.com/GerasimosMakisMouzakitis",
+          "description": "My GitHub profile and repositories",
+          "tags": ["github", "profile", "code"],
+          "category": "personal",
+          "priority": 1,
+          "dateAdded": "2025-10-15"
+        },
+        {
+          "id": "makris-archive",
+          "title": "ΙΩΑΝΝΗΣ ΜΑΚΡΗΣ - ΠΡΟ 1955",
+          "url": "https://drive.google.com/drive/u/1/folders/1ezh6P25akxXWJDy9kVPzDPDlxXOxz7Pq",
+          "description": "Historical family archive",
+          "tags": ["personal", "archive", "history"],
+          "category": "personal",
+          "priority": 2,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "topoktima",
+          "title": "TOPOKTIMA",
+          "url": "https://drive.google.com/drive/u/1/folders/1vqtURtpJYAHm1GRB-cGuPjJmCuQbfZtx",
+          "description": "Property and land documents",
+          "tags": ["personal", "property", "documents"],
+          "category": "personal",
+          "priority": 3,
+          "dateAdded": "2025-10-16"
+        },
+        {
+          "id": "electronic-id",
+          "title": "ΗΛΕΚΤΡΟΝΙΚΗ ΤΑΥΤΟΤΗΤΑ - ΧΩΡΙΣ ΑΔΕΙΑ",
+          "url": "https://docs.google.com/document/u/1/d/12aIo4OQG--Auc6VgkYIikyN_AiaumyfEuPgmrLxTtrk/edit?tab=t.0",
+          "description": "Electronic ID documentation",
+          "tags": ["personal", "documents", "official"],
+          "category": "personal",
+          "priority": 4,
+          "dateAdded": "2025-10-17"
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "name": "🔧 Utilities",
+      "description": "Online utilities and tools",
+      "order": 5,
+      "links": [
+        {
+          "id": "voice-recorder",
+          "title": "ONLINE VOICE RECORDER",
+          "url": "https://online-voice-recorder.com/",
+          "description": "Free online voice recording tool",
+          "tags": ["audio", "recording", "utility"],
+          "category": "utilities",
+          "priority": 1,
+          "dateAdded": "2025-10-17"
+        },
+        {
+          "id": "google-enterprise",
+          "title": "GOOGLE ENTERPRISE",
+          "url": "",
+          "description": "Google Enterprise services (URL to be added)",
+          "tags": ["google", "enterprise", "placeholder"],
+          "category": "utilities",
+          "priority": 2,
+          "dateAdded": "2025-10-17",
+          "note": "URL needs to be filled in"
+        }
+      ]
+    }
+  ]
+}

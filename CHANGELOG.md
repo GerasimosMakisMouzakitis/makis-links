@@ -5,6 +5,32 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.0.11] — 2025-10-20
+### ✨ Added
+- Created `src/data/links.data.json` with structured link data
+- Added 5 link categories (AI Tools, Dev Tools, Shopping, Personal, Utilities)
+- Added rich metadata for each link (descriptions, tags, priorities, dates)
+- Added `loadLinksData()` function to fetch JSON data
+- Added `renderLinks()` function to generate HTML from data
+- Added `injectLinksFromData()` function for data-driven rendering
+
+### 🛠️ Changed
+- Migrated 21 hardcoded links from `links.module.html` to JSON
+- Updated `app.module.js` to load and render links from data (v0.0.2)
+- Removed dependency on `links.module.html` HTML file
+
+### 🎯 Improved
+- Links now easy to edit (just update JSON file)
+- Better organization with 5 categories
+- Future-ready for search/filter features
+- Cleaner separation of data and presentation
+- Modularity score: 7.5/10 → 8.0/10 ⬆️
+
+### 👤 Author
+- Gerasimos Makis Mouzakitis
+
+---
+
 ## [0.0.10] — 2025-10-20
 ### ✨ Added
 - Created `/src/scripts/app.module.js` - Extracted JavaScript from HTML
