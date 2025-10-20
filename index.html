@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MAKIS LINKS</title>
+  <meta name="author" content="Gerasimos Makis Mouzakitis">
+  <meta name="application-name" content="MAKIS LINKS">
+  <link rel="stylesheet" href="style.module.css">
+  <script defer>
+    (async () => {
+      try {
+        // Load all modules and version.json
+        const [headerRes, linksRes, footerRes, versionRes] = await Promise.all([
+          fetch('header.module.html', { cache: 'no-store' }),
+          fetch('links.module.html', { cache: 'no-store' }),
+          fetch('footer.module.html', { cache: 'no-store' }),
+          fetch('version.json', { cache: 'no-store' })
+        ]);
+
+        const [headerHTML, linksHTML, footerHTML, versionData] = await Promise.all([
+          headerRes.text(),
+          linksRes.text(),
+          footerRes.text(),
+          versionRes.json()
+        ]);
+
+        // Inject header and version
+        const headerContainer = document.getElementById('header-container');
+        headerContainer.innerHTML = headerHTML;
+        const h1 = headerContainer.querySelector('h1');
+        if (h1) h1.textContent += ` v${versionData.version}`;
+
+        // Inject links
+        document.getElementById('links-container').innerHTML = linksHTML;
+
+        // Inject footer and version info
+        const footerContainer = document.getElementById('footer-container');
+        footerContainer.innerHTML = footerHTML;
+        
+        // Add version info inside the footer element
+        const footer = footerContainer.querySelector('footer');
+        if (footer) {
+          const versionDiv = document.createElement('div');
+          versionDiv.style.marginTop = '10px';
+          versionDiv.style.fontSize = '12px';
+          versionDiv.style.color = '#999';
+          versionDiv.textContent = `App Version: ${versionData.version} | Last Updated: ${versionData.lastUpdated}`;
+          footer.appendChild(versionDiv);
+        }
+
+      } catch (err) {
+        console.error('Error loading modules or version.json:', err);
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- 🔼 Header -->
+  <div id="header-container"></div>
+
+  <!-- 🔗 Links -->
+  <div id="links-container"></div>
+
+  <!-- 🔽 Footer -->
+  <div id="footer-container"></div>
+
+</body>
+</html>

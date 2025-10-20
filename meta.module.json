@@ -1,0 +1,42 @@
+[
+  {
+    "module": "index.html",
+    "version": "0.0.9",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Main entry point for the modular HTML app",
+    "dependencies": [],
+    "lastUpdated": "2025-10-20T17:08"
+  },
+  {
+    "module": "style.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Global styles for layout, typography, and modules",
+    "dependencies": [],
+    "lastUpdated": "2025-10-20T17:08"
+  },
+  {
+    "module": "header.module.html",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Header section with dynamic version injection",
+    "dependencies": ["version.json"],
+    "lastUpdated": "2025-10-20T17:08"
+  },
+  {
+    "module": "links.module.html",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Curated list of civic, creative, and technical links",
+    "dependencies": [],
+    "lastUpdated": "2025-10-20T17:08"
+  },
+  {
+    "module": "footer.module.html",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Footer with dynamic version and timestamp injection",
+    "dependencies": ["version.json"],
+    "lastUpdated": "2025-10-20T17:08"
+  }
+]

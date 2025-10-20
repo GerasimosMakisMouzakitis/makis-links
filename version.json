@@ -1,0 +1,29 @@
+{
+  "app": "MAKIS LINKS",
+  "version": "0.0.9",
+  "description": "A modular HTML project for curated links, versioned components, and civic transparency.",
+  "main": "index.html",
+  "keywords": [
+    "modular HTML",
+    "versioning",
+    "link directory",
+    "civic tech",
+    "Gerasimos Makis Mouzakitis",
+    "MAKIS LINKS"
+  ],
+  "license": "MIT",
+  "dateCreated": "2025-10-19",
+  "lastUpdated": "2025-10-20T17:08",
+  "modules": {
+    "index.html": "0.0.9",
+    "style.module.css": "0.0.1",
+    "header.module.html": "0.0.1",
+    "links.module.html": "0.0.1",
+    "footer.module.html": "0.0.1"
+  },
+  "author": {
+    "name": "Gerasimos Makis Mouzakitis",
+    "github": "https://github.com/GerasimosMakisMouzakitis"
+  },
+  "repository": null
+}

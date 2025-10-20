@@ -1,0 +1,32 @@
+{
+  "name": "makis-links",
+  "version": "0.0.9",
+  "description": "A modular HTML project for curated links, versioned components, and civic transparency",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000",
+    "serve": "serve . -p 3000"
+  },
+  "keywords": [
+    "modular HTML",
+    "versioning",
+    "link directory",
+    "civic tech",
+    "Gerasimos Makis Mouzakitis",
+    "MAKIS LINKS"
+  ],
+  "author": {
+    "name": "Gerasimos Makis Mouzakitis",
+    "url": "https://github.com/GerasimosMakisMouzakitis"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GerasimosMakisMouzakitis/makis-links.git"
+  },
+  "homepage": "https://github.com/GerasimosMakisMouzakitis/makis-links#readme"
+}
