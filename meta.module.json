@@ -1,11 +1,19 @@
 [
   {
     "module": "index.html",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "author": "Gerasimos Makis Mouzakitis",
     "description": "Main entry point for the modular HTML app",
-    "dependencies": [],
-    "lastUpdated": "2025-10-20T17:08"
+    "dependencies": ["app.module.js"],
+    "lastUpdated": "2025-10-20T16:50"
+  },
+  {
+    "module": "app.module.js",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Main application logic - handles dynamic module loading",
+    "dependencies": ["header.module.html", "links.module.html", "footer.module.html", "version.json"],
+    "lastUpdated": "2025-10-20T16:50"
   },
   {
     "module": "style.module.css",
