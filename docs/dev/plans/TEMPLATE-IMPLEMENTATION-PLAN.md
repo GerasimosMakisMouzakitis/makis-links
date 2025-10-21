@@ -10,6 +10,42 @@
 
 ---
 
+## 💡 Plan Creation Strategy
+
+**For simple plans (<500 lines):** Fill template sequentially in one session.
+
+**For complex plans (>1000 lines, extensive code):**
+
+### Option A: Sequential Chunks
+1. **Chunk 1 (15 min):** Header, Objective, Success Criteria, Metrics
+2. **Chunk 2 (30 min):** Phase 1 (Preparation) + Phase 2 (Implementation with complete code)
+3. **Chunk 3 (30 min):** Phase 3 (Integration) + Phase 4 (Testing)
+4. **Chunk 4 (20 min):** Phase 5 (Documentation) + Phase 6 (Git)
+5. **Chunk 5 (20 min):** Troubleshooting + Rollback Plan
+6. **Chunk 6 (10 min):** Completion Checklist + Review
+7. **Total:** ~2 hours for comprehensive plan
+
+### Option B: Code-First Approach
+1. **Step 1 (40 min):** Write all code templates (in scratch or comments)
+2. **Step 2 (10 min):** Copy template, fill header and metrics
+3. **Step 3 (5 min):** Insert pre-written code into Phase 2
+4. **Step 4 (30 min):** Fill Phases 1, 3-6 referencing the code
+5. **Step 5 (20 min):** Add testing procedures and troubleshooting
+6. **Step 6 (15 min):** Complete checklist, review, commit
+7. **Total:** ~2 hours, complete code included upfront
+
+**Benefits of Chunking:**
+- ✅ Prevents token limit issues during creation
+- ✅ Better focus on each section
+- ✅ Easier to review incrementally
+- ✅ Complete code templates included (no placeholders)
+- ✅ Implementation is faster (copy-paste ready code)
+- ✅ Reduces back-and-forth during implementation
+
+**Rule:** Never sacrifice completeness for speed. Incomplete plans cause delays during implementation.
+
+---
+
 ## 🎯 Objective
 
 [Clear description of what this implementation aims to achieve. Include:]

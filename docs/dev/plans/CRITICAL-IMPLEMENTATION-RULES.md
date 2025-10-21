@@ -33,6 +33,39 @@
 
 5. **ONLY THEN start implementation**
 
+### 💡 EFFICIENCY TIP: Work in Chunks for Large Plans
+
+**For complex plans with extensive code (>1000 lines):**
+
+**Strategy 1: Sequential Chunk Filling**
+1. Copy template
+2. Fill header + metrics (10-15 min)
+3. Fill Phase 1 + Phase 2 (20-30 min)
+4. Fill Phase 3 + Phase 4 (20-30 min)
+5. Fill Phase 5 + Phase 6 (15-20 min)
+6. Fill Troubleshooting + Rollback (15-20 min)
+7. Fill Completion Checklist (10 min)
+8. Review complete plan
+9. Commit to Git
+
+**Strategy 2: Complete Code First, Then Integrate**
+1. Prepare complete code templates separately (in comments or scratch)
+2. Copy template
+3. Fill header quickly
+4. Insert pre-written code into Phase 2
+5. Fill remaining sections referencing the code
+6. Add testing based on code features
+7. Commit complete plan
+
+**Benefits:**
+- ✅ Prevents token limit issues
+- ✅ Better organization and focus
+- ✅ Easier to review each section
+- ✅ Complete code included upfront
+- ✅ Faster implementation later
+
+**Rule:** Never sacrifice completeness for speed. A plan with incomplete code templates slows down implementation.
+
 ---
 
 ## 🚨 RULE #2: NO IMPLEMENTATION WITHOUT A COMPLETE PLAN
