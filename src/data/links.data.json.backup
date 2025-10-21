@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
+  "version": "1.0.0",
   "lastUpdated": "2025-10-21",
-  "totalLinks": 32,
+  "totalLinks": 31,
   "categories": [
     {
       "id": "ai-tools",
@@ -116,16 +116,6 @@
           "category": "dev-tools",
           "priority": 4,
           "dateAdded": "2025-10-16"
-        },
-        {
-          "id": "spec-kit",
-          "title": "SPEC-KIT",
-          "url": "https://github.com/github/spec-kit",
-          "description": "GitHub's specification documentation toolkit",
-          "tags": ["github", "documentation", "specs", "toolkit"],
-          "category": "dev-tools",
-          "priority": 5,
-          "dateAdded": "2025-10-21"
         }
       ]
     },
@@ -261,141 +251,6 @@
           "priority": 2,
           "dateAdded": "2025-10-17",
           "note": "URL needs to be filled in"
-        }
-      ]
-    },
-    {
-      "id": "audio-equipment",
-      "name": "🎧 Audio Equipment",
-      "description": "Professional audio hardware and equipment",
-      "order": 6,
-      "links": [
-        {
-          "id": "audeze-lcd-x",
-          "title": "Audeze LCD-X",
-          "url": "https://www.audeze.com/products/lcd-x",
-          "description": "Professional planar magnetic headphones",
-          "tags": ["audio", "headphones", "professional", "planar-magnetic"],
-          "category": "audio-equipment",
-          "priority": 1,
-          "dateAdded": "2025-10-21"
-        },
-        {
-          "id": "rme-adi-2-pro",
-          "title": "RME ADI-2 PRO",
-          "url": "https://www.rme-audio.de/adi-2-pro.html",
-          "description": "High-end AD/DA converter and headphone amplifier",
-          "tags": ["audio", "converter", "DAC", "professional"],
-          "category": "audio-equipment",
-          "priority": 2,
-          "dateAdded": "2025-10-21"
-        }
-      ]
-    },
-    {
-      "id": "music-production",
-      "name": "🎵 Music Production",
-      "description": "Music production tools and software",
-      "order": 7,
-      "links": [
-        {
-          "id": "faderport",
-          "title": "FaderPort",
-          "url": "https://www.presonus.com/products/FaderPort",
-          "description": "Digital mixing controller for DAW control",
-          "tags": ["music-production", "controller", "DAW", "mixing"],
-          "category": "music-production",
-          "priority": 1,
-          "dateAdded": "2025-10-21"
-        },
-        {
-          "id": "omnisphere-3",
-          "title": "Omnisphere 3",
-          "url": "https://www.spectrasonics.net/products/omnisphere/",
-          "description": "Professional software synthesizer with vast sound library",
-          "tags": ["music-production", "VST", "synthesizer", "plugin"],
-          "category": "music-production",
-          "priority": 2,
-          "dateAdded": "2025-10-21"
-        }
-      ]
-    },
-    {
-      "id": "ai-video-tools",
-      "name": "🎬 AI Video Tools",
-      "description": "AI-powered video generation and editing",
-      "order": 8,
-      "links": [
-        {
-          "id": "veo-3-1",
-          "title": "VEO 3.1",
-          "url": "",
-          "description": "AI video generation tool (URL pending research)",
-          "tags": ["AI", "video", "generation"],
-          "category": "ai-video-tools",
-          "priority": 1,
-          "dateAdded": "2025-10-21",
-          "note": "URL needs to be researched and added"
-        },
-        {
-          "id": "sora-2-0",
-          "title": "SORA 2.0",
-          "url": "",
-          "description": "OpenAI's video generation AI (URL pending research)",
-          "tags": ["AI", "video", "generation", "OpenAI"],
-          "category": "ai-video-tools",
-          "priority": 2,
-          "dateAdded": "2025-10-21",
-          "note": "URL needs to be researched and added"
-        },
-        {
-          "id": "wan-2-5",
-          "title": "WAN 2.5",
-          "url": "",
-          "description": "AI video tool (URL pending research)",
-          "tags": ["AI", "video"],
-          "category": "ai-video-tools",
-          "priority": 3,
-          "dateAdded": "2025-10-21",
-          "note": "URL needs to be researched and added"
-        },
-        {
-          "id": "suno-ai",
-          "title": "SUNO",
-          "url": "https://www.suno.ai/",
-          "description": "AI music and audio generation platform",
-          "tags": ["AI", "music", "generation", "audio"],
-          "category": "ai-video-tools",
-          "priority": 4,
-          "dateAdded": "2025-10-21"
-        }
-      ]
-    },
-    {
-      "id": "video-equipment",
-      "name": "📹 Video Equipment",
-      "description": "Professional video recording equipment",
-      "order": 9,
-      "links": [
-        {
-          "id": "dji-mic-mini",
-          "title": "DJI MIC Mini",
-          "url": "https://www.dji.com/dji-mic",
-          "description": "Compact wireless microphone system",
-          "tags": ["video", "audio", "microphone", "wireless"],
-          "category": "video-equipment",
-          "priority": 1,
-          "dateAdded": "2025-10-21"
-        },
-        {
-          "id": "dji-osmo-pocket",
-          "title": "DJI Osmo Pocket",
-          "url": "https://www.dji.com/osmo-pocket",
-          "description": "Handheld gimbal camera for smooth video",
-          "tags": ["video", "camera", "gimbal", "portable"],
-          "category": "video-equipment",
-          "priority": 2,
-          "dateAdded": "2025-10-21"
         }
       ]
     }

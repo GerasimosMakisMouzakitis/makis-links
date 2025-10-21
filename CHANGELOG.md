@@ -5,6 +5,29 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [Data 1.1.0] - 2025-10-21
+
+### Added
+- 11 new links across 4 new categories (21 → 32 total links)
+- New category: 🎧 Audio Equipment (Audeze LCD-X, RME ADI-2 PRO)
+- New category: 🎵 Music Production (FaderPort, Omnisphere 3)
+- New category: 🎬 AI Video Tools (VEO 3.1, SORA 2.0, WAN 2.5, SUNO)
+- New category: 📹 Video Equipment (DJI MIC Mini, DJI Osmo Pocket)
+- SPEC-KIT added to existing 💻 Development Tools category
+
+### Changed
+- Total links increased from 21 to 32 (+52% growth)
+- Total categories increased from 5 to 9 (+80% growth)
+- links.data.json version bumped from 1.0.0 to 1.1.0
+- Corrected totalLinks metadata (was incorrectly showing 31, now shows accurate count of 32)
+
+### Notes
+- 3 AI video tools (VEO 3.1, SORA 2.0, WAN 2.5) added without URLs (pending research)
+- All other links include valid URLs and complete descriptions
+- Category organization improved with specialized professional/creative tool categories
+
+---
+
 ## [0.0.13] — 2025-10-21
 ### ✨ Added
 - Dual theme system with original colorful theme and modern dark theme

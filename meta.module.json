@@ -25,11 +25,11 @@
   },
   {
     "module": "links.data.json",
-    "version": "0.0.1",
+    "version": "1.1.0",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Structured data for all links with categories and metadata",
+    "description": "Structured data for 32 curated links across 9 categories with metadata",
     "dependencies": [],
-    "lastUpdated": "2025-10-20T19:00"
+    "lastUpdated": "2025-10-21"
   },
   {
     "module": "index.css",
