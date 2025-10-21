@@ -2,7 +2,7 @@
 
 A modular HTML project for curated links, versioned components, and civic transparency.
 
-**Version:** 0.0.9  
+**Version:** 0.0.13  
 **Author:** [Gerasimos Makis Mouzakitis](https://github.com/GerasimosMakisMouzakitis)  
 **License:** MIT
 
@@ -16,6 +16,7 @@ A modular HTML project for curated links, versioned components, and civic transp
 - **Dynamic Loading**: JavaScript-based module injection with version tracking
 - **Semantic Versioning**: Built-in version management via `version.json`
 - **Module Metadata**: Traceability with `meta.module.json`
+- **Dual Theme System**: Original colorful theme + modern dark theme with instant switching
 - **Cache-Optimized**: Fetch configurations to prevent 304 (Not Modified) issues
 - **Development-Friendly**: Static server with ETag disabled for consistent content delivery
 
@@ -23,8 +24,12 @@ A modular HTML project for curated links, versioned components, and civic transp
 
 ## ✨ Features
 
-- 🎨 **Colorful UI**: Blue background, green header, orange list items
+- 🎨 **Dual Theme System**: Choose between original colorful theme or modern dark theme
+- 🌞 **Original Theme**: Blue background, green header, orange list items, yellow highlights
+- 🌙 **Modern Dark Theme**: Professional dark design with blue accents
 - 🔄 **Dynamic Version Injection**: Header and footer display live version info
+- 💾 **Theme Persistence**: Your theme preference is saved in browser localStorage
+- ⌨️ **Keyboard Accessible**: Full keyboard navigation support (Tab, Enter, Space)
 - 📦 **Modular Components**: Easy to maintain and extend
 - 🚀 **Single-Page App Mode**: Uses `serve` for client-side routing
 - 🔒 **Cache Control**: Configured to avoid browser caching issues during development
@@ -91,21 +96,80 @@ http://localhost:3000
 
 ---
 
+## 🎨 Theme System
+
+**MAKIS LINKS** supports two themes for different visual preferences:
+
+### Available Themes
+
+1. **Original Theme** (Colorful)
+   - Blue background
+   - Green header with white text
+   - Orange list items
+   - Yellow highlights
+   - Classic, vibrant design
+
+2. **Modern Dark Theme** (Professional)
+   - Dark backgrounds (#1a1a1a)
+   - Blue accents (#3498db)
+   - Clean, minimalist design
+   - Better for low-light environments
+
+### Switching Themes
+
+Click the theme toggle button in the header (top-right corner):
+- **🌞 Original Theme** - Switch to colorful theme
+- **🌙 Dark Theme** - Switch to dark theme
+
+Your theme preference is automatically saved in browser localStorage and persists across sessions.
+
+### Keyboard Accessibility
+
+- Press **Tab** to focus the theme toggle button
+- Press **Enter** or **Space** to switch themes
+- Button has proper focus indicators and aria-labels
+
+### Technical Details
+
+- **Theme Files:** `src/styles/themes/theme-original.css`, `theme-modern-dark.css`
+- **Switcher:** `src/scripts/theme-switcher.js`
+- **Implementation:** CSS `data-theme` attribute on `<html>` element
+- **Persistence:** Browser localStorage (`theme` key)
+- **Default:** Modern Dark Theme
+
+---
+
 ## 📁 Project Structure
 
 ```
 makis-links/
-├── index.html              # Main entry point (loads modules dynamically)
-├── header.module.html      # Header component with version injection
-├── links.module.html       # Curated list of links
-├── footer.module.html      # Footer component with metadata
-├── style.module.css        # Global styles
-├── version.json            # Version and metadata
-├── meta.module.json        # Module-level traceability
-├── package.json            # npm configuration and scripts
-├── CHANGELOG.md            # Version history and changes
-├── LICENSE                 # MIT License
-└── README.md               # This file
+├── index.html                   # Main entry point (loads modules dynamically)
+├── header.module.html           # Header component with theme toggle
+├── links.module.html            # Curated list of links
+├── footer.module.html           # Footer component with metadata
+├── src/
+│   ├── scripts/
+│   │   ├── app.module.js        # Main application logic
+│   │   └── theme-switcher.js    # Theme switching module
+│   ├── styles/
+│   │   ├── index.css            # Main CSS entry point
+│   │   ├── base.module.css      # Base variables and resets (theme-agnostic)
+│   │   ├── header.module.css    # Header component styles
+│   │   ├── links.module.css     # Links component styles
+│   │   ├── footer.module.css    # Footer component styles
+│   │   ├── layout.module.css    # Layout utilities
+│   │   ├── utilities.module.css # Utility classes
+│   │   └── themes/
+│   │       ├── theme-original.css      # Original colorful theme
+│   │       └── theme-modern-dark.css   # Modern dark theme
+│   └── data/
+│       └── links.data.json      # Links data
+├── version.json                 # Version and metadata
+├── meta.module.json             # Module-level traceability
+├── package.json                 # npm configuration and scripts
+├── CHANGELOG.md                 # Version history and changes
+├── LICENSE                      # MIT License
+└── README.md                    # This file
 ```
 
 ---

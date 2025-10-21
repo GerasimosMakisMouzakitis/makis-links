@@ -1,6 +1,6 @@
 /* Header Module - Header Component Styles
-   Version: 0.0.11
-   Styles for page header
+   Version: 0.0.2
+   Styles for page header and theme toggle button
 */
 
 header {
@@ -8,6 +8,7 @@ header {
   margin-bottom: var(--space-lg);
   padding: var(--space-md);
   border-bottom: 2px solid var(--color-accent);
+  position: relative;
 }
 
 header h1 {
@@ -20,3 +21,33 @@ header p {
   color: var(--color-link);
   font-size: 1.1rem;
 }
+
+/* Theme Toggle Button */
+#theme-toggle {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--color-link);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#theme-toggle:hover {
+  background-color: var(--color-link-hover);
+  transform: translateY(-2px);
+}
+
+#theme-toggle:active {
+  transform: translateY(0);
+}
+
+#theme-toggle:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+

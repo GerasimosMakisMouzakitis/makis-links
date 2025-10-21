@@ -1,0 +1,67 @@
+/* Original Theme - Colorful Design
+   Version: 0.0.1
+   Blue background, green header, orange lists, yellow highlights
+   Restored from style.module.css.backup
+*/
+
+[data-theme="original"] {
+  /* Original color scheme */
+  --color-bg: blue;
+  --color-text: white;
+  --color-link: #3498db;
+  --color-link-hover: #5dade2;
+  --color-accent: #e74c3c;
+}
+
+[data-theme="original"] body {
+  background-color: blue;
+  color: white;
+}
+
+[data-theme="original"] h1 {
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+[data-theme="original"] ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+[data-theme="original"] li {
+  background-color: orange;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+[data-theme="original"] li:hover {
+  background-color: grey;
+}
+
+[data-theme="original"] a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+[data-theme="original"] a:hover {
+  text-decoration: underline;
+}
+
+[data-theme="original"] .highlight {
+  background-color: yellow;
+  color: black;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+[data-theme="original"] footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}

@@ -1,18 +1,23 @@
 /* Main CSS Entry Point
-   Version: 0.0.11
+   Version: 0.0.3
    Imports all CSS modules in dependency order
 */
 
 /* 1. Base (CSS variables & resets) - Must be first */
 @import './base.module.css';
 
-/* 2. Layout utilities */
+/* 2. Theme files (define theme-specific colors) */
+@import './themes/theme-original.css';
+@import './themes/theme-modern-dark.css';
+
+/* 3. Layout utilities */
 @import './layout.module.css';
 
-/* 3. Component modules */
+/* 4. Component modules */
 @import './header.module.css';
 @import './links.module.css';
 @import './footer.module.css';
 
-/* 4. Utilities (helper classes) - Last to allow overrides */
+/* 5. Utilities (helper classes) - Last to allow overrides */
 @import './utilities.module.css';
+

@@ -1,11 +1,11 @@
 [
   {
     "module": "index.html",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Main entry point for the modular HTML app",
-    "dependencies": ["app.module.js"],
-    "lastUpdated": "2025-10-20T16:50"
+    "description": "Main entry point for the modular HTML app with theme system",
+    "dependencies": ["app.module.js", "theme-switcher.js"],
+    "lastUpdated": "2025-10-21T07:05"
   },
   {
     "module": "app.module.js",
@@ -14,6 +14,14 @@
     "description": "Main application logic - data-driven module loading",
     "dependencies": ["header.module.html", "footer.module.html", "version.json", "links.data.json"],
     "lastUpdated": "2025-10-20T19:00"
+  },
+  {
+    "module": "theme-switcher.js",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Theme switching functionality with localStorage persistence and keyboard accessibility",
+    "dependencies": ["localStorage API", "DOM manipulation"],
+    "lastUpdated": "2025-10-21T07:05"
   },
   {
     "module": "links.data.json",
@@ -25,27 +33,43 @@
   },
   {
     "module": "index.css",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Main CSS entry point - imports all modular CSS files",
-    "dependencies": ["base.module.css", "layout.module.css", "header.module.css", "links.module.css", "footer.module.css", "utilities.module.css"],
-    "lastUpdated": "2025-10-21T05:01"
+    "description": "Main CSS entry point - imports all modular CSS files including themes",
+    "dependencies": ["base.module.css", "theme-original.css", "theme-modern-dark.css", "layout.module.css", "header.module.css", "links.module.css", "footer.module.css", "utilities.module.css"],
+    "lastUpdated": "2025-10-21T07:05"
   },
   {
     "module": "base.module.css",
+    "version": "0.0.2",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "CSS structural design tokens (theme-agnostic) and base resets",
+    "dependencies": [],
+    "lastUpdated": "2025-10-21T07:05"
+  },
+  {
+    "module": "theme-original.css",
     "version": "0.0.1",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "CSS custom properties (design tokens) and base resets",
-    "dependencies": [],
-    "lastUpdated": "2025-10-21T04:59"
+    "description": "Original colorful theme CSS. Blue background, green header, orange lists, yellow highlights.",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T07:05"
+  },
+  {
+    "module": "theme-modern-dark.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Modern dark theme CSS. Dark backgrounds (#1a1a1a), blue accents (#3498db), professional styling.",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T07:05"
   },
   {
     "module": "header.module.css",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Header component styles",
+    "description": "Header component styles with theme toggle button",
     "dependencies": ["base.module.css"],
-    "lastUpdated": "2025-10-21T05:00"
+    "lastUpdated": "2025-10-21T07:05"
   },
   {
     "module": "links.module.css",
@@ -81,11 +105,11 @@
   },
   {
     "module": "header.module.html",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Header section with dynamic version injection",
-    "dependencies": ["version.json"],
-    "lastUpdated": "2025-10-20T17:08"
+    "description": "Header section with theme toggle button",
+    "dependencies": ["version.json", "theme-switcher.js"],
+    "lastUpdated": "2025-10-21T07:05"
   },
   {
     "module": "links.module.html",

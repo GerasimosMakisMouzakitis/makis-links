@@ -1,29 +1,31 @@
 /* Base Module - CSS Custom Properties & Resets
-   Version: 0.0.2
-   Defines structural design tokens (theme-agnostic)
-   Theme-specific colors are in themes/*.css
+   Version: 0.0.11
+   Defines design tokens and base styles
 */
 
 :root {
-  /* Spacing Scale (structural, theme-agnostic) */
+  /* Color Palette */
+  --color-bg: #1a1a1a;
+  --color-text: #e0e0e0;
+  --color-link: #3498db;
+  --color-link-hover: #5dade2;
+  --color-accent: #e74c3c;
+  
+  /* Spacing Scale */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
   
-  /* Typography (structural, theme-agnostic) */
+  /* Typography */
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-size-base: 16px;
   --line-height: 1.6;
   
-  /* Layout (structural, theme-agnostic) */
+  /* Layout */
   --max-width: 800px;
   --border-radius: 8px;
-  
-  /* Color variables removed - now defined in theme files */
-  /* See: src/styles/themes/theme-original.css */
-  /* See: src/styles/themes/theme-modern-dark.css */
 }
 
 /* CSS Reset */

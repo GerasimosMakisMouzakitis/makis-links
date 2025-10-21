@@ -1,6 +1,6 @@
 {
   "app": "MAKIS LINKS",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A modular HTML project for curated links, versioned components, and civic transparency.",
   "main": "index.html",
   "keywords": [
@@ -13,19 +13,22 @@
   ],
   "license": "MIT",
   "dateCreated": "2025-10-19",
-  "lastUpdated": "2025-10-21T05:10",
+  "lastUpdated": "2025-10-21T07:05",
   "modules": {
-    "index.html": "0.0.10",
+    "index.html": "0.0.11",
     "app.module.js": "0.0.2",
+    "theme-switcher.js": "0.0.1",
     "links.data.json": "1.0.0",
-    "index.css": "0.0.1",
-    "base.module.css": "0.0.1",
-    "header.module.css": "0.0.1",
+    "index.css": "0.0.3",
+    "base.module.css": "0.0.2",
+    "header.module.css": "0.0.2",
     "links.module.css": "0.0.1",
     "footer.module.css": "0.0.1",
     "layout.module.css": "0.0.1",
     "utilities.module.css": "0.0.1",
-    "header.module.html": "0.0.1",
+    "theme-original.css": "0.0.1",
+    "theme-modern-dark.css": "0.0.1",
+    "header.module.html": "0.0.2",
     "footer.module.html": "0.0.1"
   },
   "author": {
