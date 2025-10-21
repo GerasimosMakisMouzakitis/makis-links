@@ -2,6 +2,8 @@
 
 This directory contains step-by-step implementation plans for all modularity improvements to the MAKIS LINKS project.
 
+**Guidelines:** See `/docs/dev/guides/` for implementation rules and templates.
+
 ---
 
 ## 🎯 Purpose
@@ -19,13 +21,18 @@ Each implementation plan provides:
 ## 📁 Directory Structure
 
 ```
-docs/dev/plans/
-├── README.md                              # This file
-├── TEMPLATE-IMPLEMENTATION-PLAN.md        # Template for new plans
-├── PLAN-001-EXTRACT-JAVASCRIPT.md         # ✅ COMPLETED
-├── PLAN-002-DATA-DRIVEN-LINKS.md          # 🟡 PENDING
-├── PLAN-003-CSS-MODULES.md                # 🟡 PENDING
-└── PLAN-00X-FEATURE-NAME.md               # Future plans
+docs/dev/
+├── guides/                                # Implementation guidelines
+│   ├── CRITICAL-IMPLEMENTATION-RULES.md   # Mandatory rules (read first!)
+│   ├── QUICK-REFERENCE.md                 # Quick reference guide
+│   └── TEMPLATE-IMPLEMENTATION-PLAN.md    # Template for new plans
+└── plans/                                 # Actual implementation plans
+    ├── README.md                          # This file
+    ├── PLAN-001-EXTRACT-JAVASCRIPT.md     # ✅ COMPLETED
+    ├── PLAN-002-DATA-DRIVEN-LINKS.md      # ✅ COMPLETED
+    ├── PLAN-003-SPLIT-CSS-MODULES.md      # ✅ COMPLETED
+    ├── PLAN-004-DUAL-THEME-SYSTEM.md      # ✅ COMPLETED
+    └── PLAN-00X-FEATURE-NAME.md           # Future plans
 ```
 
 ---
@@ -41,7 +48,7 @@ PLAN-[NUMBER]-[FEATURE-NAME].md
 **Examples:**
 - `PLAN-001-EXTRACT-JAVASCRIPT.md`
 - `PLAN-002-DATA-DRIVEN-LINKS.md`
-- `PLAN-003-CSS-MODULES.md`
+- `PLAN-003-SPLIT-CSS-MODULES.md`
 
 **Rules:**
 - Use 3-digit zero-padded numbers (001, 002, 003...)
@@ -53,11 +60,17 @@ PLAN-[NUMBER]-[FEATURE-NAME].md
 
 ## 🚀 How to Create a New Implementation Plan
 
+### Step 0: Read the Guidelines First! ⚠️
+
+**MANDATORY:** Before creating any plan, read:
+- `/docs/dev/guides/CRITICAL-IMPLEMENTATION-RULES.md` - Must follow rules
+- `/docs/dev/guides/QUICK-REFERENCE.md` - Quick workflow guide
+
 ### Step 1: Copy the Template
 
 ```bash
 # Copy template to new plan file
-cp docs/dev/plans/TEMPLATE-IMPLEMENTATION-PLAN.md \
+cp docs/dev/guides/TEMPLATE-IMPLEMENTATION-PLAN.md \
    docs/dev/plans/PLAN-00X-YOUR-FEATURE-NAME.md
 
 # Replace X with next number and YOUR-FEATURE-NAME with actual feature

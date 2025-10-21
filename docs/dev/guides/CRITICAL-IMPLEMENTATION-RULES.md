@@ -10,7 +10,7 @@
 
 1. **Copy the template:**
    ```bash
-   cp docs/dev/plans/TEMPLATE-IMPLEMENTATION-PLAN.md \
+   cp docs/dev/guides/TEMPLATE-IMPLEMENTATION-PLAN.md \
       docs/dev/plans/PLAN-00X-FEATURE-NAME.md
    ```
 

@@ -8,7 +8,7 @@ A one-page guide for using the implementation plan template system.
 
 ### 1️⃣ Copy Template
 ```bash
-cp docs/dev/plans/TEMPLATE-IMPLEMENTATION-PLAN.md \
+cp docs/dev/guides/TEMPLATE-IMPLEMENTATION-PLAN.md \
    docs/dev/plans/PLAN-00X-YOUR-FEATURE.md
 ```
 
