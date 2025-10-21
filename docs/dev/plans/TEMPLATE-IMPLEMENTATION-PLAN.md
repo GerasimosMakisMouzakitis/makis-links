@@ -62,7 +62,39 @@ Check all items when complete:
 
 ### Phase 1: Preparation ([X] minutes)
 
-#### Step 1.1: [Preparation Task Name]
+#### Step 1.1: Create Backup Files (MANDATORY)
+
+**⚠️ CRITICAL: Always create backups with .backup suffix BEFORE modifying files**
+
+```bash
+# Backup files that will be modified or replaced
+cp file-to-modify.ext file-to-modify.ext.backup
+cp another-file.ext another-file.ext.backup
+
+# Example from PLAN-003:
+cp style.module.css style.module.css.backup
+cp index.html index.html.backup
+```
+
+**Verify backups:**
+```bash
+# Check backup files exist
+ls -la *.backup
+
+# Compare backup with original (should be identical)
+diff file.ext file.ext.backup
+# Expected: No output (files are identical)
+```
+
+**Why .backup suffix?**
+- ✅ Clear naming: Anyone knows it's a backup
+- ✅ Easy rollback: Rename .backup → original
+- ✅ Git tracks it: Backup is versioned
+- ✅ No confusion: Original vs backup is obvious
+
+---
+
+#### Step 1.2: [Preparation Task Name]
 ```bash
 # Commands to run
 [bash commands]
@@ -78,7 +110,7 @@ Check all items when complete:
 
 ---
 
-#### Step 1.2: [Another Preparation Task]
+#### Step 1.3: [Another Preparation Task]
 [Description of what to do]
 
 **Files Affected:**
@@ -416,6 +448,48 @@ git log --oneline -1
 ```
 
 **Expected:** Commit appears on GitHub
+
+---
+
+#### Step 6.5: Clean Up Original Files (Keep Only .backup Files)
+
+**After verifying implementation works:**
+
+```bash
+# Remove original files that are no longer used (replaced by new implementation)
+rm original-file.ext
+
+# Keep ONLY the .backup version
+# This makes it clear which files are backups
+ls -la *.backup
+
+# Example from PLAN-003:
+rm style.module.css          # Removed (no longer used)
+# Kept: style.module.css.backup  ← Clear it's a backup
+```
+
+**Commit the cleanup:**
+```bash
+git add -u original-file.ext
+git commit -m "chore: Remove unused original file, keep .backup version
+
+- Removed original-file.ext (replaced by new implementation)
+- Kept original-file.ext.backup for rollback
+- .backup suffix clearly indicates it's a backup file"
+
+git push origin main
+```
+
+**Why remove originals and keep .backup?**
+- ✅ Clear naming: .backup suffix is self-documenting
+- ✅ Cleaner workspace: No duplicate files without clear purpose
+- ✅ Easy rollback: Backup file is clearly marked
+- ✅ Git history: Original still in Git history if needed
+
+**⚠️ IMPORTANT:**
+- Only remove originals AFTER verifying new implementation works
+- Always keep the .backup file for rollback
+- If unsure, keep both until fully tested
 
 ---
 

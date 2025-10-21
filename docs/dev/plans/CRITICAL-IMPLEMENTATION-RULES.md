@@ -114,7 +114,52 @@ When creating a plan, ALWAYS reference:
 
 ---
 
-## 🚨 RULE #6: UPDATE RULES IF BYPASSED
+## 🚨 RULE #6: ALWAYS CREATE BACKUPS WITH .backup SUFFIX
+
+**BEFORE** modifying or deleting any existing files:
+
+1. **Create backup with .backup suffix:**
+   ```bash
+   # For files being modified
+   cp filename.ext filename.ext.backup
+   
+   # Examples:
+   cp style.module.css style.module.css.backup
+   cp index.html index.html.backup
+   cp app.module.js app.module.js.backup
+   ```
+
+2. **After successful implementation:**
+   - Keep ONLY the `.backup` files
+   - Remove the original files if they're no longer used
+   - The `.backup` suffix clearly indicates it's a backup
+
+3. **Why .backup suffix is important:**
+   - ✅ Clear naming: Anyone can see it's a backup
+   - ✅ Easy rollback: Just rename file.backup → file
+   - ✅ Git tracks it: Backup is versioned
+   - ✅ No confusion: Original vs backup is obvious
+
+4. **Cleanup after implementation:**
+   ```bash
+   # If original file is replaced (not used anymore):
+   rm original-file.ext
+   # Keep: original-file.ext.backup
+   
+   # Commit the cleanup
+   git add -u original-file.ext
+   git add original-file.ext.backup
+   git commit -m "chore: Remove unused original, keep .backup version"
+   ```
+
+**Example from PLAN-003:**
+- Created `style.module.css.backup` ✅
+- Removed `style.module.css` after CSS modules working ✅
+- Kept only `style.module.css.backup` for rollback ✅
+
+---
+
+## 🚨 RULE #7: UPDATE RULES IF BYPASSED
 
 If rules are bypassed:
 
@@ -175,12 +220,18 @@ If rules are bypassed:
                │
                ▼
 ┌─────────────────────────────────────┐
-│ 7. NOW start Phase 1 of plan         │
+│ 7. Create .backup files FIRST        │
+│    cp file.ext file.ext.backup       │
 └──────────────┬──────────────────────┘
                │
                ▼
 ┌─────────────────────────────────────┐
-│ 8. Follow plan step-by-step          │
+│ 8. NOW start Phase 1 of plan         │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│ 9. Follow plan step-by-step          │
 │    - Phase 1: Preparation            │
 │    - Phase 2: Implementation         │
 │    - Phase 3: Integration            │
@@ -191,7 +242,13 @@ If rules are bypassed:
                │
                ▼
 ┌─────────────────────────────────────┐
-│ 9. Update plan status to COMPLETED   │
+│ 10. Clean up: Remove originals,     │
+│     keep .backup files               │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│ 11. Update plan status to COMPLETED  │
 └─────────────────────────────────────┘
 ```
 
@@ -227,8 +284,20 @@ Before starting ANY implementation:
 - [ ] Success criteria listed
 - [ ] Plan committed to Git
 - [ ] Plan reviewed and validated
+- [ ] Backup files created with .backup suffix
+- [ ] Backup files verified (compared to originals)
 
 **If ANY checkbox is unchecked, DO NOT PROCEED!**
+
+After completing implementation:
+
+- [ ] All phases completed successfully
+- [ ] All tests passed
+- [ ] Documentation updated (version.json, CHANGELOG.md)
+- [ ] Changes committed and pushed to Git
+- [ ] Original files removed (if replaced)
+- [ ] Only .backup files kept for rollback
+- [ ] Plan status marked as ✅ COMPLETED
 
 ---
 

@@ -22,12 +22,46 @@ cp docs/dev/plans/TEMPLATE-IMPLEMENTATION-PLAN.md \
 ```
 
 ### 3️⃣ Execute Phases
-- Phase 1: Preparation (backup, create dirs)
+- Phase 1: Preparation (⚠️ **BACKUP FILES FIRST** with .backup suffix, create dirs)
 - Phase 2: Implementation (write code)
 - Phase 3: Integration (connect components)
 - Phase 4: Testing (visual, console, network)
 - Phase 5: Documentation (version.json, CHANGELOG)
-- Phase 6: Git (commit & push)
+- Phase 6: Git (commit & push, **clean up: remove originals, keep .backup**)
+
+---
+
+## ⚠️ CRITICAL: Backup Strategy
+
+**ALWAYS create backups BEFORE modifying files:**
+
+```bash
+# Step 1: Create backups with .backup suffix
+cp file-to-modify.ext file-to-modify.ext.backup
+
+# Step 2: Verify backup created
+ls -la *.backup
+
+# Step 3: Implement changes
+# ... make modifications ...
+
+# Step 4: Test implementation
+# ... run tests ...
+
+# Step 5: After success, remove original (keep .backup)
+rm file-to-modify.ext
+# Keep: file-to-modify.ext.backup ✅
+
+# Step 6: Commit cleanup
+git add -u file-to-modify.ext
+git add file-to-modify.ext.backup
+git commit -m "chore: Remove unused original, keep .backup"
+```
+
+**Why .backup suffix?**
+- ✅ Self-documenting: Clear it's a backup
+- ✅ Easy rollback: Just rename .backup → original
+- ✅ No confusion: Original vs backup is obvious
 
 ---
 
@@ -50,12 +84,12 @@ cp docs/dev/plans/TEMPLATE-IMPLEMENTATION-PLAN.md \
 
 | Phase | Duration | Activities |
 |-------|----------|------------|
-| Phase 1: Preparation | 15-30 min | Backup, create directories |
+| Phase 1: Preparation | 15-30 min | **Backup files (.backup suffix)**, create directories |
 | Phase 2: Implementation | 30-60 min | Write code, create files |
 | Phase 3: Integration | 15-30 min | Connect components |
 | Phase 4: Testing | 30-45 min | Visual, console, network tests |
 | Phase 5: Documentation | 15-20 min | Update version files |
-| Phase 6: Git | 10-15 min | Commit and push |
+| Phase 6: Git | 10-15 min | Commit, push, **cleanup (rm originals, keep .backup)** |
 | **Total** | **2-3 hours** | **Complete implementation** |
 
 ---
