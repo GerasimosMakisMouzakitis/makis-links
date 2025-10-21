@@ -135,6 +135,11 @@ if (document.readyState === 'loading') {
   initTheme();
 }
 
+// Export functions globally for app.module.js to call after dynamic loading
+window.initTheme = initTheme;
+window.toggleTheme = toggleTheme;
+window.getCurrentTheme = getCurrentTheme;
+
 // Export functions for potential external use
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {

@@ -105,6 +105,12 @@ export async function loadModules() {
     injectFooter(footerHTML, versionData);
 
     console.log(`✅ All modules loaded successfully - v${versionData.version}`);
+    
+    // Re-initialize theme system after header is loaded
+    if (typeof initTheme === 'function') {
+      console.log('[App] Re-initializing theme system after header loaded');
+      initTheme();
+    }
 
   } catch (err) {
     console.error('❌ Error loading modules:', err);

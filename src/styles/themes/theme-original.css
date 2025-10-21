@@ -18,11 +18,14 @@
   color: white;
 }
 
+[data-theme="original"] header {
+  border-bottom: none;
+}
+
 [data-theme="original"] h1 {
   background-color: green;
   color: white;
   padding: 1rem;
-  border-radius: var(--border-radius);
 }
 
 [data-theme="original"] ul {
@@ -34,7 +37,6 @@
   background-color: orange;
   margin: 0.5rem 0;
   padding: 0.5rem;
-  border-radius: var(--border-radius);
 }
 
 [data-theme="original"] li:hover {
@@ -54,7 +56,6 @@
   background-color: yellow;
   color: black;
   padding: 0.2rem 0.4rem;
-  border-radius: 4px;
 }
 
 [data-theme="original"] footer {
@@ -62,6 +63,5 @@
   color: #ccc;
   padding: 1rem;
   margin-top: 2rem;
-  border-radius: var(--border-radius);
   text-align: center;
 }
