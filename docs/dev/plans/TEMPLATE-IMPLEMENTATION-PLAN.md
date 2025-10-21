@@ -334,23 +334,65 @@ performance.getEntriesByType('resource').length
 
 ---
 
-#### Step 5.3: Update meta.module.json
+#### Step 5.3: Update meta.module.json (MANDATORY)
+
+**⚠️ CRITICAL: Always update meta.module.json to document all modules**
 
 **File:** `/workspaces/makis-links/meta.module.json`
 
-**Add entries for new modules:**
+**For NEW modules created:**
 ```json
 {
   "module": "new.module.js",
   "version": "0.0.1",
   "author": "Gerasimos Makis Mouzakitis",
-  "description": "[Module description]",
+  "description": "[Clear description of what this module does]",
   "dependencies": ["dependency1.js", "dependency2.js"],
-  "lastUpdated": "2025-10-20T[HH:MM]"
+  "lastUpdated": "2025-10-21T[HH:MM]"
 }
 ```
 
-**Update existing module versions if modified**
+**For REPLACED modules (e.g., splitting one file into multiple):**
+1. Remove old module entry (if no longer used)
+2. Add new module entries
+3. Document dependencies between modules
+
+**Example from PLAN-003 (CSS modules):**
+```json
+// ❌ Remove old entry:
+// "style.module.css" - no longer used
+
+// ✅ Add new entries:
+{
+  "module": "index.css",
+  "version": "0.0.1",
+  "description": "Main CSS entry point - imports all modular CSS files",
+  "dependencies": ["base.module.css", "header.module.css", "..."],
+  "lastUpdated": "2025-10-21T05:01"
+},
+{
+  "module": "base.module.css",
+  "version": "0.0.1",
+  "description": "CSS custom properties (design tokens) and base resets",
+  "dependencies": [],
+  "lastUpdated": "2025-10-21T04:59"
+}
+// ... add all other modules
+```
+
+**For MODIFIED existing modules:**
+- Update version if significant changes
+- Update lastUpdated timestamp
+- Update dependencies if changed
+
+**Verification:**
+```bash
+# Validate JSON syntax
+python3 -m json.tool meta.module.json > /dev/null && echo "✅ Valid JSON"
+
+# Check all new modules are documented
+# Compare with files created in Phase 2
+```
 
 ---
 

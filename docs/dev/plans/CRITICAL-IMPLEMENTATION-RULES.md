@@ -61,15 +61,21 @@ Every plan MUST include:
 2. ✅ Objective & Benefits
 3. ✅ Success Criteria (checkboxes)
 4. ✅ Before & After Metrics
-5. ✅ Phase 1: Preparation
+5. ✅ Phase 1: Preparation (with backup creation)
 6. ✅ Phase 2: Implementation
 7. ✅ Phase 3: Integration
 8. ✅ Phase 4: Testing
-9. ✅ Phase 5: Documentation
-10. ✅ Phase 6: Git Commit & Push
+9. ✅ Phase 5: Documentation (version.json, CHANGELOG.md, **meta.module.json**)
+10. ✅ Phase 6: Git Commit & Push (with cleanup)
 11. ✅ Complete Code Templates
 12. ✅ Troubleshooting Section
 13. ✅ Completion Checklist
+
+### Phase 5 (Documentation) Must Include:
+- ✅ version.json update (version bump, module entries)
+- ✅ CHANGELOG.md update (new entry with changes)
+- ✅ **meta.module.json update (MANDATORY - all new/modified/removed modules)**
+- ✅ README.md update (if needed)
 
 ### Code Templates Must Be:
 - Production-ready
@@ -293,7 +299,11 @@ After completing implementation:
 
 - [ ] All phases completed successfully
 - [ ] All tests passed
-- [ ] Documentation updated (version.json, CHANGELOG.md)
+- [ ] Documentation updated:
+  - [ ] version.json (version bumped, modules listed)
+  - [ ] CHANGELOG.md (new entry added)
+  - [ ] **meta.module.json (all modules documented)**
+  - [ ] README.md (if needed)
 - [ ] Changes committed and pushed to Git
 - [ ] Original files removed (if replaced)
 - [ ] Only .backup files kept for rollback

@@ -26,7 +26,7 @@ cp docs/dev/plans/TEMPLATE-IMPLEMENTATION-PLAN.md \
 - Phase 2: Implementation (write code)
 - Phase 3: Integration (connect components)
 - Phase 4: Testing (visual, console, network)
-- Phase 5: Documentation (version.json, CHANGELOG)
+- Phase 5: Documentation (version.json, CHANGELOG, **meta.module.json**)
 - Phase 6: Git (commit & push, **clean up: remove originals, keep .backup**)
 
 ---
@@ -159,29 +159,37 @@ PLAN-[NUMBER]-[FEATURE-NAME].md
 
 ---
 
-## 📚 Documentation Updates
+## 📚 Documentation Updates (Phase 5)
 
-Every implementation must update:
+Every implementation must update these files **in order**:
 
-1. **version.json**
-   - Increment version number
-   - Update timestamp
+1. **version.json** (Step 5.1)
+   - Increment version number (0.0.X → 0.0.Y)
+   - Update lastUpdated timestamp
    - Add/update module entries
 
-2. **CHANGELOG.md**
-   - Add new version entry
+2. **CHANGELOG.md** (Step 5.2)
+   - Add new version entry at top
    - List changes (Added, Changed, Improved, Fixed)
    - Include author name
 
-3. **meta.module.json**
-   - Add new module entries
-   - Update dependencies
-   - Update version numbers
+3. **meta.module.json** (Step 5.3) ⚠️ **MANDATORY**
+   - Add entries for NEW modules created
+   - Remove entries for REPLACED modules (if no longer used)
+   - Update dependencies between modules
+   - Update lastUpdated timestamps
+   - Validate JSON syntax: `python3 -m json.tool meta.module.json`
 
-4. **README.md** (if needed)
+4. **README.md** (Step 5.4) (if needed)
    - Update features list
    - Update file structure
    - Update usage instructions
+
+**Why meta.module.json is critical:**
+- Documents all modules in the system
+- Shows dependencies between modules
+- Tracks version history of each module
+- Required for understanding project architecture
 
 ---
 
