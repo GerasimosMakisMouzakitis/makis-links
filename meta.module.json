@@ -17,19 +17,67 @@
   },
   {
     "module": "links.data.json",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "author": "Gerasimos Makis Mouzakitis",
     "description": "Structured data for all links with categories and metadata",
     "dependencies": [],
     "lastUpdated": "2025-10-20T19:00"
   },
   {
-    "module": "style.module.css",
+    "module": "index.css",
     "version": "0.0.1",
     "author": "Gerasimos Makis Mouzakitis",
-    "description": "Global styles for layout, typography, and modules",
+    "description": "Main CSS entry point - imports all modular CSS files",
+    "dependencies": ["base.module.css", "layout.module.css", "header.module.css", "links.module.css", "footer.module.css", "utilities.module.css"],
+    "lastUpdated": "2025-10-21T05:01"
+  },
+  {
+    "module": "base.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "CSS custom properties (design tokens) and base resets",
     "dependencies": [],
-    "lastUpdated": "2025-10-20T17:08"
+    "lastUpdated": "2025-10-21T04:59"
+  },
+  {
+    "module": "header.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Header component styles",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T05:00"
+  },
+  {
+    "module": "links.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Link cards and list component styles",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T05:00"
+  },
+  {
+    "module": "footer.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Footer component styles",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T05:00"
+  },
+  {
+    "module": "layout.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Container and spacing utility classes",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T05:00"
+  },
+  {
+    "module": "utilities.module.css",
+    "version": "0.0.1",
+    "author": "Gerasimos Makis Mouzakitis",
+    "description": "Helper classes for text alignment, visibility, and loading states",
+    "dependencies": ["base.module.css"],
+    "lastUpdated": "2025-10-21T05:01"
   },
   {
     "module": "header.module.html",
