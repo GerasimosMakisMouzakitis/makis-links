@@ -1,0 +1,45 @@
+/* Base Module - CSS Custom Properties & Resets
+   Version: 0.0.11
+   Defines design tokens and base styles
+*/
+
+:root {
+  /* Color Palette */
+  --color-bg: #1a1a1a;
+  --color-text: #e0e0e0;
+  --color-link: #3498db;
+  --color-link-hover: #5dade2;
+  --color-accent: #e74c3c;
+  
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  
+  /* Typography */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 16px;
+  --line-height: 1.6;
+  
+  /* Layout */
+  --max-width: 800px;
+  --border-radius: 8px;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--space-md);
+}

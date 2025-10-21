@@ -1,0 +1,22 @@
+/* Header Module - Header Component Styles
+   Version: 0.0.11
+   Styles for page header
+*/
+
+header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+header p {
+  color: var(--color-link);
+  font-size: 1.1rem;
+}

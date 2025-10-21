@@ -1,0 +1,26 @@
+/* Footer Module - Footer Component Styles
+   Version: 0.0.11
+   Styles for page footer
+*/
+
+footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(224, 224, 224, 0.6);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: var(--space-xs) 0;
+}
+
+footer a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

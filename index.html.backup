@@ -5,7 +5,7 @@
   <title>MAKIS LINKS</title>
   <meta name="author" content="Gerasimos Makis Mouzakitis">
   <meta name="application-name" content="MAKIS LINKS">
-  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="style.module.css">
   <script type="module" src="src/scripts/app.module.js"></script>
 </head>
 <body>

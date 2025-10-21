@@ -1,0 +1,48 @@
+/* Links Module - Links Component Styles
+   Version: 0.0.11
+   Styles for link cards and lists
+*/
+
+.link-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: var(--space-md);
+  margin: var(--space-sm) 0;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color-link);
+}
+
+.link-card h2 {
+  color: var(--color-link);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.link-card a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-card a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.link-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-card li {
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-card li:last-child {
+  border-bottom: none;
+}
+
+.highlight {
+  background: rgba(231, 76, 60, 0.1);
+  border-left-color: var(--color-accent);
+}

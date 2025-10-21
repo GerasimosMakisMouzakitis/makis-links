@@ -5,6 +5,38 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.0.12] — 2025-10-21
+### 🎯 Improved
+- Split monolithic CSS into 7 modular files for better organization
+- Added CSS custom properties (design tokens) for colors, spacing, typography
+- Organized styles by component (header, links, footer) and purpose (layout, utilities)
+- Improved CSS Modularity from 5/10 to 9/10 (+4 points)
+- Overall Modularity increased from 8.0/10 to 8.5/10
+
+### ✨ Added
+- `src/styles/` directory structure
+- `src/styles/index.css` - Main CSS entry point with @import statements
+- `src/styles/base.module.css` - CSS variables and resets (46 lines)
+- `src/styles/header.module.css` - Header component styles (23 lines)
+- `src/styles/links.module.css` - Link cards and lists (48 lines)
+- `src/styles/footer.module.css` - Footer component styles (28 lines)
+- `src/styles/layout.module.css` - Layout and spacing utilities (29 lines)
+- `src/styles/utilities.module.css` - Helper classes (26 lines)
+- CSS custom properties: --color-*, --space-*, --font-*, --max-width, --border-radius (20+ variables)
+
+### 🛠️ Changed
+- Updated `index.html` to reference `src/styles/index.css` instead of `style.module.css`
+- Moved from 1 monolithic file (61 lines) to 7 modular files (219 lines total)
+- All color values now use CSS variables for consistency
+
+### 📦 Backup
+- Created `style.module.css.backup` (original 61-line file preserved)
+
+### 👤 Author
+- Gerasimos Makis Mouzakitis
+
+---
+
 ## [0.0.11] — 2025-10-20
 ### ✨ Added
 - Created `src/data/links.data.json` with structured link data

@@ -1,0 +1,25 @@
+/* Utilities Module - Helper Classes
+   Version: 0.0.11
+   Reusable utility classes
+*/
+
+/* Text utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Visibility */
+.hidden { display: none; }
+.visible { display: block; }
+
+/* Highlight */
+.highlight {
+  background: rgba(231, 76, 60, 0.1);
+  border-left: 4px solid var(--color-accent);
+}
+
+/* Loading state */
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
