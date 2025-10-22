@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
   "lastUpdated": "2025-10-21",
-  "totalLinks": 32,
+  "totalLinks": 33,
   "categories": [
     {
       "id": "ai-tools",
@@ -109,10 +109,10 @@
         },
         {
           "id": "hcodx",
-          "title": "HCODX - FREE HTML Editor",
+          "title": "HCODX - FREE HTML Editor 🚫 DO NOT USE",
           "url": "https://hcodx.com/",
-          "description": "Free online HTML editor",
-          "tags": ["HTML", "editor", "free"],
+          "description": "Free online HTML editor (Note: Does not meet my needs)",
+          "tags": ["HTML", "editor", "free", "not-recommended"],
           "category": "dev-tools",
           "priority": 4,
           "dateAdded": "2025-10-16"
@@ -125,6 +125,16 @@
           "tags": ["github", "documentation", "specs", "toolkit"],
           "category": "dev-tools",
           "priority": 5,
+          "dateAdded": "2025-10-21"
+        },
+        {
+          "id": "stackblitz",
+          "title": "StackBlitz 🚫 DO NOT USE",
+          "url": "https://stackblitz.com/",
+          "description": "Online IDE for web development (Note: Does not meet my needs)",
+          "tags": ["IDE", "web-development", "online-editor", "not-recommended"],
+          "category": "dev-tools",
+          "priority": 6,
           "dateAdded": "2025-10-21"
         }
       ]

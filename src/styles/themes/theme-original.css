@@ -1,7 +1,7 @@
 /* Original Theme - Colorful Design
-   Version: 0.0.1
+   Version: 0.0.2
    Blue background, green header, orange lists, yellow highlights
-   Restored from style.module.css.backup
+   Restored from style.module.css.backup with original font sizes
 */
 
 [data-theme="original"] {
@@ -16,6 +16,9 @@
 [data-theme="original"] body {
   background-color: blue;
   color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 [data-theme="original"] header {
@@ -25,18 +28,22 @@
 [data-theme="original"] h1 {
   background-color: green;
   color: white;
-  padding: 1rem;
+  padding: 10px;
+  margin: 0;
 }
 
-[data-theme="original"] ul {
+[data-theme="original"] ul,
+[data-theme="original"] ol {
+  padding: 20px;
   list-style-type: none;
-  padding: 0;
 }
 
 [data-theme="original"] li {
   background-color: orange;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
 }
 
 [data-theme="original"] li:hover {
@@ -44,7 +51,7 @@
 }
 
 [data-theme="original"] a {
-  color: darkblue;
+  color: black;
   text-decoration: none;
 }
 
@@ -55,13 +62,17 @@
 [data-theme="original"] .highlight {
   background-color: yellow;
   color: black;
-  padding: 0.2rem 0.4rem;
 }
 
 [data-theme="original"] footer {
   background-color: #222;
   color: #ccc;
-  padding: 1rem;
-  margin-top: 2rem;
   text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+[data-theme="original"] footer a {
+  color: #ccc;
+  text-decoration: underline;
 }
